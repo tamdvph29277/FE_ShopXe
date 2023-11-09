@@ -32,6 +32,7 @@
     <div ng-view></div>
     <div ng-include="'tintuc.html'"></div>
     <div ng-include="'footer.html'"></div>
+    <!-- npx json-server --watch db.json -->
     <script>
       var app = angular.module("myApp", ["ngRoute"]);
       app.config(function ($routeProvider, $locationProvider) {

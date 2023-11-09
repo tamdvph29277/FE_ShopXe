@@ -1,0 +1,238 @@
+<div class="container">
+  <div class="row border-bottom">
+    <div class="col-md-6">
+      <div class="mt-5 ms-5">
+        <img
+          src="{{sanpham.img}}"
+          width="400px"
+          height="400px"
+          alt=""
+          ng-model="img"
+        />
+      </div>
+      <div>
+        <a href="" class="text-decoration-none m-4">
+          <img src="img/thongdung6.jpg" width="140px" height="140px" alt="">
+        </a>
+        <a href="" class="text-decoration-none m-4">
+          <img src="img/thongdung7.jpg" width="140px" height="140px" alt="">
+        </a>
+        <a href="" class="text-decoration-none m-4">
+          <img src="img/thongdung12 (1).webp" width="140px" height="140px" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p class="mt-5 border-bottom pb-3 fs-3">{{sanpham.ten}}</p>
+      <div class="mt-3 border-bottom pb-3">
+        <span class="price-now fw-bold fs-5 text-danger">{{sanpham.gia}}</span>
+        <span class="price-compare text-body-secondary ms-2 fs-6"
+          ><del>4,999,999₫</del></span
+        >
+      </div>
+      <div class="mt-3 border-bottom pb-3">
+        <h6>Màu sắc:</h6>
+        <button
+          type="button"
+          class="btn btn-dark rounded-circle"
+          style="width: 30px; height: 30px"
+          ng-model="mausac"
+        ></button>
+        <button
+          type="button"
+          class="btn btn-danger rounded-circle"
+          style="width: 30px; height: 30px"
+          ng-model="mausac"
+        ></button>
+        <button
+          type="button"
+          class="btn btn-warning rounded-circle"
+          style="width: 30px; height: 30px"
+          ng-model="mausac"
+        ></button>
+      </div>
+      <div class="mt-3">
+        <div
+          class="quantity-container"
+          style="max-width: 150px"
+          ng-controller="mycontroller4"
+        >
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-light fw-bold border"
+                id="decrease-btn"
+                ng-click="giam()"
+              >
+                -
+              </button>
+            </div>
+            <input
+              type="text"
+              class="form-control quantity-input bg-white"
+              id="quantity-input"
+              value="{{count}}"
+              style="text-align: center; font-size: 16px"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-light fw-bold border"
+                id="increase-btn"
+                ng-click="tang()"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-3 d-flex">
+          <div class="w-50">
+            <a href="#giohang" type="button" class="btn btn-outline-dark w-100 rounded-0" ng-click="addgiohang()">
+              Thêm vào giỏ hàng
+            </a>
+          </div>
+          <div class="w-50 ms-2">
+            <a
+              type="button"
+              class="btn btn-dark btn btn-outline-light w-100 rounded-0 border-dark"
+            >
+              Mua ngay
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <p class="fw-bold">Mô tả</p>
+        <p class="fw-light">
+          Màu sắc nhã nhặn <br />
+          Xuất xứ từ Nhật Bản <br />
+          Dòng xe đạp mini cao cấp <br />
+          Chất liệu cao cấp, bền đẹp <br />
+          Phù hợp để đi học, đi làm <br />
+          Khung xe bằng hợp kim đồng bền bỉ <br />
+          Sản phẩm chưa được lắp hoàn chỉnh (Khách hàng cần lắp bánh trước, ghi
+          đông, bàn đạp và giỏ xe)
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4 mb-5">
+    <p class="fs-2 text-center">SẢN PHẨM LIÊN QUAN</p>
+    <div class="row">
+      <div class="col-md-3 mt-2">
+        <div class="thumbnail rounded bg-white">
+          <a href="#" class="text-decoration-none">
+            <img
+              src="img/thongdung1 (1).webp"
+              alt="Lights"
+              style="width: 100%"
+              class="rounded"
+            />
+            <p class="fs-5 text-dark ms-3">Xe Đạp Fixed Gear Sportslink</p>
+          </a>
+          <span class="price-now fw-bold fs-4 text-danger ms-3"
+            >3,999,999₫</span
+          >
+          <span class="price-compare text-body-secondary ms-2 fs-6"
+            ><del>4,999,999₫</del></span
+          >
+          <div class="ms-3 pb-1">
+            <p>
+              <a
+                href="#"
+                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Mua nhiều giảm nhiều</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="thumbnail rounded bg-white">
+          <a href="#" class="text-decoration-none">
+            <img
+              src="img/thongdung2 (1).webp"
+              alt="Lights"
+              style="width: 100%"
+              class="rounded"
+            />
+            <p class="fs-5 text-dark ms-3">Xe Đạp Fixed Gear Sportslink</p>
+          </a>
+          <span class="price-now fw-bold fs-4 text-danger ms-3"
+            >3,999,999₫</span
+          >
+          <span class="price-compare text-body-secondary ms-2 fs-6"
+            ><del>4,999,999₫</del></span
+          >
+          <div class="ms-3 pb-1">
+            <p>
+              <a
+                href="#"
+                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Mua nhiều giảm nhiều</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="thumbnail rounded bg-white">
+          <a href="#" class="text-decoration-none">
+            <img
+              src="img/thongdung11 (1).webp"
+              alt="Lights"
+              style="width: 100%"
+              class="rounded"
+            />
+            <p class="fs-5 text-dark ms-3">Xe Đạp Fixed Gear Sportslink</p>
+          </a>
+          <span class="price-now fw-bold fs-4 text-danger ms-3"
+            >3,999,999₫</span
+          >
+          <span class="price-compare text-body-secondary ms-2 fs-6"
+            ><del>4,999,999₫</del></span
+          >
+          <div class="ms-3 pb-1">
+            <p>
+              <a
+                href="#"
+                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Mua nhiều giảm nhiều</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-2">
+        <div class="thumbnail rounded bg-white">
+          <a href="#" class="text-decoration-none">
+            <img
+              src="img/thongdung12 (1).webp"
+              alt="Lights"
+              style="width: 100%"
+              class="rounded"
+            />
+            <p class="fs-5 text-dark ms-3">Xe Đạp Fixed Gear Sportslink</p>
+          </a>
+          <span class="price-now fw-bold fs-4 text-danger ms-3"
+            >3,999,999₫</span
+          >
+          <span class="price-compare text-body-secondary ms-2 fs-6"
+            ><del>4,999,999₫</del></span
+          >
+          <div class="ms-3 pb-1">
+            <p>
+              <a
+                href="#"
+                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >Mua nhiều giảm nhiều</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

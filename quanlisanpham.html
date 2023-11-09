@@ -1,0 +1,53 @@
+<div class="h4 mt-5 pb-2 text-dark border-bottom border-dark container">
+    QUẢN LÍ SẢN PHẨM
+  </div>
+<form class="container mt-5" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">ID</label>
+    <input type="text" class="form-control" ng-model="id" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Ảnh xe</label>
+    <input type="text" class="form-control" ng-model="img" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Tên</label>
+    <input type="text" class="form-control" ng-model="ten" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Giá</label>
+    <input type="text" class="form-control" ng-model="gia" />
+  </div>
+  <button type="submit" class="btn btn-primary" ng-click="addSanPham()">
+    Thêm
+  </button>
+</form>
+<table class="table container">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Ảnh xe</td>
+      <td>Tên</td>
+      <td>Giá</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="sanpham in listSanPham">
+      <td>{{sanpham.id}}</td>
+      <td>{{sanpham.img}}</td>
+      <td>{{sanpham.ten}}</td>
+      <td>{{sanpham.gia}}</td>
+      <td>
+        <button class="btn btn-primary" ng-click="detail(sanpham.id)">
+          Detail
+        </button>
+        <button class="btn btn-primary" ng-click="delete(sanpham.id)">
+          Xóa
+        </button>
+        <button class="btn btn-primary" ng-click="update(sanpham.id)">
+          Sửa
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

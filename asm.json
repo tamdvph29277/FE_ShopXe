@@ -1,0 +1,57 @@
+{
+  "user": [],
+  "sanpham": [
+    {
+      "id": "1",
+      "img": "img/thongdung5.jpg",
+      "ten": "Xe Đạp Thời Trang Dunlop Nữ",
+      "gia": "2,900,000"
+    },
+    {
+      "id": "2",
+      "img": "img/thongdung8.jpg",
+      "ten": "Xe đạp thể thao GIANT ATX 610",
+      "gia": "2,900,000"
+    },
+    {
+      "id": "3",
+      "img": "img/thoitrang1.webp",
+      "ten": "Xe đạp thể thao 49North LX26",
+      "gia": "2,900,000"
+    },
+    {
+      "id": "4",
+      "img": "img/thoitrang4.webp",
+      "ten": "Xe Đạp Sportslink New",
+      "gia": "3,400,000"
+    },
+    {
+      "id": "5",
+      "img": "img/thoitrang4.webp",
+      "ten": "Xe Đạp Sportslink New",
+      "gia": "3,400,000"
+    }
+  ],
+  "danhmuc": [
+    {
+      "id": "1",
+      "tendm": "Xe địa hình"
+    },
+    {
+      "id": "2",
+      "tendm": "Xe thời trang"
+    },
+    {
+      "id": "3",
+      "tendm": "Xe thông thường"
+    }
+  ],
+  "giohang": [
+    {
+      "id": "4",
+      "img": "img/thoitrang4.webp",
+      "ten": "Xe Đạp Sportslink New",
+      "gia": "340000"
+    }
+  ]
+}

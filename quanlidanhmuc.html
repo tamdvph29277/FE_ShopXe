@@ -1,0 +1,42 @@
+<div class="h4 mt-5 pb-2 text-dark border-bottom border-dark container">
+    QUẢN LÍ DANH MỤC
+  </div>
+<form class="container mt-5" method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">ID</label>
+      <input type="text" class="form-control" ng-model="id" />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Tên danh mục</label>
+      <input type="text" class="form-control" ng-model="tendm"/>
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="addDanhMuc()">
+      Thêm
+    </button>
+  </form>
+  <table class="table container">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Tên danh mục</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="danhmuc in listDanhMuc">
+        <td>{{danhmuc.id}}</td>
+        <td>{{danhmuc.tendm}}</td>
+        <td>
+          <button class="btn btn-primary" ng-click="detail(danhmuc.id)">
+            Detail
+          </button>
+          <button class="btn btn-primary" ng-click="delete(danhmuc.id)">
+            Xóa
+          </button>
+          <button class="btn btn-primary" ng-click="update(danhmuc.id)">
+            Sửa
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
